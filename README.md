@@ -2,4 +2,4 @@
 
 ## Online
 
-https://github.com/treedbox/three-js-coins
+https://treedbox.github.io/three-js-coins
