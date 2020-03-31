@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "es6",
+        "moduleResolution": "Node",
+        "sourceMap": true,
+        "target": "es6",
+        "baseUrl": ".",
+        "allowJs": true,
+        "declaration": true,
+        "declarationMap": true,
+        "noImplicitAny": false,
+        "lib": ["DOM", "ES6"]
+    }
+}

@@ -1,0 +1,742 @@
+{
+    "scenes": {
+        "scene1": {
+            "background": {
+                "color": "0x607D8B"
+            },
+            "animate": [
+                {
+                    "property": "rotation",
+                    "combination": 24,
+                    "speed": 0.0001,
+                    "distance": 2.5
+                }
+            ]
+        }
+    },
+    "texts": {
+        "welcome": {
+            "text": "Welcome HOME!",
+            "font": "helvetiker_regular",
+            "size": 0.5,
+            "height": 0.01,
+            "curveSegments": 12,
+            "bevelEnabled": false,
+            "bevelThickness": 1,
+            "bevelSize": 0,
+            "bevelOffset": 0,
+            "bevelSegments": 0,
+            "color": "0x000000",
+            "position": {
+                "x": 0,
+                "y": 10,
+                "z": -10
+            },
+            "animate": [
+                {
+                    "property": "position",
+                    "combination": 24,
+                    "speed": 0.00004,
+                    "distance": 3
+                },
+                {
+                    "property": "rotatio",
+                    "combination": 24,
+                    "speed": 0.00005,
+                    "distance": 3
+                }
+            ]
+        }
+    },
+    "orbits": {
+        "orbit_camera": {
+            "type": "camera",
+            "name": "perspective_camera",
+            "domElement": "renderer"
+        }
+    },
+    "cameras": {
+        "perspective_camera": {
+            "type": "perspective",
+            "fov": 75,
+            "aspect": "auto",
+            "near": 0.1,
+            "far": 1000,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 10
+            }
+        },
+        "orthographic_camera": {
+            "type": "orthographic",
+            "left": -10,
+            "right": 10,
+            "top": 10,
+            "bottom": -10,
+            "near": -2000,
+            "far": 2000,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            }
+        },
+        "cube_camera": {
+            "type": "cube",
+            "near": 0.1,
+            "far": 1000,
+            "cubeResolution": 32,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 10
+            }
+        }
+    },
+    "lights": {
+        "ambientlight": {
+            "type": "_ambient",
+            "color": "0xffdd00",
+            "intensity": 0.5
+        },
+        "pointlight": {
+            "type": "_point",
+            "color": "0x00ff00",
+            "intensity": 0.5,
+            "distance": 20,
+            "decay": 2
+        },
+        "directionallight": {
+            "type": "_directional",
+            "color": "0xff0000",
+            "intensity": 0.5,
+            "target": "earth"
+        },
+        "spotlight": {
+            "type": "_spot",
+            "color": "0xff0000",
+            "intensity": 0.5,
+            "distance": 1000,
+            "target": "earth"
+        },
+        "hemispherelight": {
+            "type": "hemisphere",
+            "skyColor": "0xff0000",
+            "groundColor": "0xffdd00",
+            "intensity": 1
+        }
+    },
+    "objects": {
+        "box": {
+            "type": "box",
+            "edges": true,
+            "wireframes": true,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "boxbuffer": {
+            "type": "boxbuffer",
+            "position": {
+                "x": 0,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "circle": {
+            "type": "circle",
+            "position": {
+                "x": 0,
+                "y": -2,
+                "z": 0
+            }
+        },
+        "circlebuffer": {
+            "type": "circlebuffer",
+            "position": {
+                "x": 2,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "cone": {
+            "type": "cone",
+            "position": {
+                "x": -2,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "conebuffer": {
+            "type": "conebuffer",
+            "position": {
+                "x": -2,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "cylinder": {
+            "type": "cylinder",
+            "position": {
+                "x": 2,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "cylinderbuffer": {
+            "type": "cylinderbuffer",
+            "position": {
+                "x": 2,
+                "y": -2,
+                "z": 0
+            }
+        },
+        "dodecahedron": {
+            "type": "dodecahedron",
+            "position": {
+                "x": -2,
+                "y": -2,
+                "z": 0
+            }
+        },
+        "dodecahedronbuffer": {
+            "type": "dodecahedronbuffer",
+            "position": {
+                "x": 0,
+                "y": 4,
+                "z": 0
+            }
+        },
+        "extrude": {
+            "type": "extrude",
+            "position": {
+                "x": 2,
+                "y": 4,
+                "z": 0
+            },
+            "options": {}
+        },
+        "extrudebuffer": {
+            "type": "extrudebuffer",
+            "position": {
+                "x": -2,
+                "y": 4,
+                "z": 0
+            },
+            "options": {}
+        },
+        "icosahedron": {
+            "type": "icosahedron",
+            "position": {
+                "x": 0,
+                "y": -4,
+                "z": 0
+            }
+        },
+        "icosahedronbuffer": {
+            "type": "icosahedronbuffer",
+            "position": {
+                "x": -2,
+                "y": -4,
+                "z": 0
+            }
+        },
+        "lathe": {
+            "type": "lathe",
+            "position": {
+                "x": 2,
+                "y": -4,
+                "z": 0
+            }
+        },
+        "lathebuffer": {
+            "type": "lathebuffer",
+            "position": {
+                "x": 4,
+                "y": -4,
+                "z": 0
+            }
+        },
+        "octahedron": {
+            "type": "octahedron",
+            "position": {
+                "x": -4,
+                "y": -4,
+                "z": 0
+            }
+        },
+        "octahedronbuffer": {
+            "type": "octahedronbuffer",
+            "position": {
+                "x": -4,
+                "y": -2,
+                "z": 0
+            }
+        },
+        "parametric": {
+            "type": "parametric",
+            "position": {
+                "x": 4,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "parametricbuffer": {
+            "type": "parametricbuffer",
+            "position": {
+                "x": -4,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "plane": {
+            "type": "plane",
+            "position": {
+                "x": -4,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "planebuffer": {
+            "type": "planebuffer",
+            "position": {
+                "x": -4,
+                "y": 4,
+                "z": 0
+            }
+        },
+        "polyhedron": {
+            "type": "polyhedron",
+            "position": {
+                "x": 4,
+                "y": 4,
+                "z": 0
+            }
+        },
+        "polyhedronbuffer": {
+            "type": "polyhedronbuffer",
+            "position": {
+                "x": 4,
+                "y": -2,
+                "z": 0
+            }
+        },
+        "ring": {
+            "type": "ring",
+            "position": {
+                "x": 4,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "ringbuffer": {
+            "type": "ringbuffer",
+            "position": {
+                "x": 6,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "shape": {
+            "type": "shape",
+            "position": {
+                "x": -6,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "shapebuffer": {
+            "type": "shapebuffer",
+            "position": {
+                "x": -6,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "sphere": {
+            "type": "sphere",
+            "position": {
+                "x": 6,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "spherebuffer": {
+            "type": "spherebuffer",
+            "position": {
+                "x": 6,
+                "y": 4,
+                "z": 0
+            }
+        },
+        "tetrahedron": {
+            "type": "tetrahedron",
+            "position": {
+                "x": -6,
+                "y": 4,
+                "z": 0
+            }
+        },
+        "tetrahedronbuffer": {
+            "type": "tetrahedronbuffer",
+            "position": {
+                "x": -6,
+                "y": -2,
+                "z": 0
+            }
+        },
+        "text": {
+            "type": "text",
+            "text": "Welcome Joni",
+            "font": "helvetiker_regular",
+            "size": 0.5,
+            "height": 0.01,
+            "curveSegments": 12,
+            "bevelEnabled": false,
+            "bevelThickness": 1,
+            "bevelSize": 0,
+            "bevelOffset": 0,
+            "bevelSegments": 0,
+            "color": "0x000000",
+            "position": {
+                "x": -8,
+                "y": -4,
+                "z": 2
+            }
+        },
+        "textbuffer": {
+            "type": "textbuffer",
+            "text": "@treedbox",
+            "font": "helvetiker_regular",
+            "size": 0.5,
+            "height": 0.01,
+            "curveSegments": 12,
+            "bevelEnabled": false,
+            "bevelThickness": 1,
+            "bevelSize": 0,
+            "bevelOffset": 0,
+            "bevelSegments": 0,
+            "color": "0x000000",
+            "position": {
+                "x": 4,
+                "y": -4,
+                "z": 2
+            }
+        },
+        "torus": {
+            "type": "torus",
+            "radius": 0.5,
+            "tube": 0.1,
+            "radialSegments": 16,
+            "tubularSegments": 100,
+            "position": {
+                "x": 8,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "torusbuffer": {
+            "type": "torusbuffer",
+            "radius": 0.5,
+            "tube": 0.1,
+            "radialSegments": 16,
+            "tubularSegments": 100,
+            "position": {
+                "x": -8,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "torusknot": {
+            "type": "torusknot",
+            "radius": 0.5,
+            "tube": 0.1,
+            "tubularSegments": 100,
+            "radialSegments": 16,
+            "position": {
+                "x": 8,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "torusknotbuffer": {
+            "type": "torusknotbuffer",
+            "radius": 0.5,
+            "tube": 0.1,
+            "tubularSegments": 100,
+            "radialSegments": 16,
+            "position": {
+                "x": -8,
+                "y": 2,
+                "z": 0
+            }
+        },
+        "tube": {
+            "type": "tube",
+            "position": {
+                "x": 8,
+                "y": 4,
+                "z": 0
+            }
+        },
+        "tubebuffer": {
+            "type": "tubebuffer",
+            "position": {
+                "x": -8,
+                "y": 4,
+                "z": 0
+            }
+        }
+    },
+    "objects_": {
+        "original": {
+            "type": "sphere",
+            "texture": "original",
+            "radius": 0.6,
+            "position": {
+                "x": 1.3,
+                "y": 1.3,
+                "z": 1.3
+            }
+        },
+        "box1": {
+            "type": "box",
+            "color": "0xff0000",
+            "width": 3,
+            "height": 3,
+            "depth": 3,
+            "texture": [
+                {
+                    "texture": "sunmap",
+                    "side": "double",
+                    "color": "0xff0000"
+                },
+                {
+                    "texture": "love",
+                    "side": "double",
+                    "color": "0xffdd00"
+                },
+                {
+                    "texture": "moonmap1k",
+                    "side": "front",
+                    "color": "0xff00ff"
+                },
+                0,
+                {
+                    "texture": "mario",
+                    "side": "back",
+                    "color": "0xff00ff"
+                },
+                {
+                    "texture": "original",
+                    "side": "back",
+                    "color": "0xff00ff"
+                }
+            ],
+            "position": {
+                "x": -5,
+                "y": 3,
+                "z": -3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "quaternion": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "box2": {
+            "type": "box",
+            "width": 2,
+            "height": 2,
+            "depth": 2,
+            "position": {
+                "x": 5,
+                "y": 3,
+                "z": -3
+            },
+            "children": {
+                "box_mario": {
+                    "type": "box",
+                    "width": 2,
+                    "height": 2,
+                    "depth": 2,
+                    "position": {
+                        "x": 5,
+                        "y": 3,
+                        "z": -3
+                    },
+                    "texture": "mario"
+                }
+            }
+        },
+        "box3": {
+            "type": "box",
+            "width": 3,
+            "height": 3,
+            "depth": 3,
+            "texture": "love",
+            "position": {
+                "x": 0,
+                "y": 5,
+                "z": -5
+            },
+            "animate": [
+                {
+                    "property": "position",
+                    "combination": 24,
+                    "speed": 0.0001,
+                    "distance": 2.5
+                },
+                {
+                    "property": "rotation",
+                    "combination": 24,
+                    "speed": 0.0001,
+                    "distance": 3
+                }
+            ]
+        },
+        "blackhole": {
+            "type": "sphere",
+            "color": "0x00ffff",
+            "opacity": 0.1,
+            "radius": 5,
+            "position": {
+                "x": -5,
+                "y": -7,
+                "z": 0
+            }
+        },
+        "star_destroyer": {
+            "type": "object3d",
+            "position": {
+                "x": 0,
+                "y": -4,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "animate": [
+                {
+                    "property": "position",
+                    "combination": 23,
+                    "speed": 0.0001,
+                    "distance": 2.5
+                }
+            ]
+        },
+        "sun": {
+            "color": "0xff9800",
+            "type": "sphere",
+            "texture": "sunmap",
+            "radius": 1.5,
+            "children": {
+                "earth": {
+                    "type": "sphere",
+                    "texture": "earthmap1k",
+                    "radius": 1,
+                    "position": {
+                        "x": 3,
+                        "y": 3,
+                        "z": 3
+                    },
+                    "children": {
+                        "moon": {
+                            "type": "sphere",
+                            "texture": "moonmap1k",
+                            "radius": 0.2,
+                            "position": {
+                                "x": 1.1,
+                                "y": 1.1,
+                                "z": 1.1
+                            },
+                            "children": {
+                                "marioballs": {
+                                    "type": "sphere",
+                                    "texture": "mario",
+                                    "radius": 0.3,
+                                    "position": {
+                                        "x": 0.8,
+                                        "y": 0.7,
+                                        "z": -1.5
+                                    },
+                                    "animate": [
+                                        {
+                                            "property": "position",
+                                            "combination": 24,
+                                            "speed": 0.0001,
+                                            "distance": 0.5
+                                        },
+                                        {
+                                            "property": "rotation",
+                                            "combination": 24,
+                                            "speed": 0.0001,
+                                            "distance": 3
+                                        }
+                                    ]
+                                }
+                            },
+                            "animate": [
+                                {
+                                    "property": "position",
+                                    "combination": 24,
+                                    "speed": 0.0001,
+                                    "distance": 1.2
+                                },
+                                {
+                                    "property": "rotation",
+                                    "combination": 24,
+                                    "speed": 0.0001,
+                                    "distance": 3
+                                }
+                            ]
+                        },
+                        "love": {
+                            "type": "sphere",
+                            "texture": "love",
+                            "radius": 0.3,
+                            "position": {
+                                "x": 0.8,
+                                "y": 0.8,
+                                "z": 0.8
+                            },
+                            "animate": [
+                                {
+                                    "property": "position",
+                                    "combination": 24,
+                                    "speed": 0.0003,
+                                    "distance": 1.5
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "textures": {
+        "original": "./assets/images/textures/original.jpg",
+        "earthspec1k": "./assets/images/textures/earthspec1k.jpg",
+        "sunmap": "./assets/images/textures/sunmap.jpg",
+        "earthmap1k": "./assets/images/textures/earthmap1k.jpg",
+        "moonmap1k": "./assets/images/textures/moonmap1k.jpg",
+        "love": "./assets/images/textures/love.jpg",
+        "mario": "./assets/images/textures/mario_world.jpg"
+    },
+    "objects3d": {
+        "star_destroyer": "./assets/models/star_destroyer/scene.gltf"
+    },
+    "fonts": {
+        "helvetiker_regular": "./assets/fonts/typeface/helvetiker_regular.typeface.json"
+    }
+}

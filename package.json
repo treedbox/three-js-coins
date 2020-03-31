@@ -1,0 +1,22 @@
+{
+    "name": "three-js-coins",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "build": "webpack --mode=production",
+        "dev": "webpack && webpack-dev-server --color --progress"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/three": "^0.103.2",
+        "three": "^0.112.1",
+        "ts-loader": "^6.2.2",
+        "typescript": "^3.8.3",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    }
+}
